@@ -1,0 +1,71 @@
+---
+# 该文件包含clang-format工具的配置设置。
+# 它基于Microsoft样式指定了C++代码的格式化样式。
+
+# 'BasedOnStyle'选项指定格式化样式应基于Microsoft样式。
+BasedOnStyle: Microsoft
+
+# 'Language'选项指定代码是用C++编写的。
+Language: Cpp
+
+###################################
+#          缩进配置
+###################################
+
+# 'UseTab'选项指定不使用制表符进行缩进。
+UseTab: Never
+
+# 'IndentWidth'选项指定缩进所使用的空格数。
+IndentWidth: 4
+
+# 'TabWidth'选项指定制表符所使用的空格数。
+TabWidth: 4
+
+# 'ColumnLimit'选项指定最大行长度。值为0表示无限制。
+ColumnLimit: 0
+
+# 'AccessModifierOffset'选项指定访问修饰符的缩进偏移量。
+AccessModifierOffset: -4
+
+# 'NamespaceIndentation'选项指定命名空间的缩进样式。
+NamespaceIndentation: All
+
+# 'FixNamespaceComments'选项指定是否修复命名空间注释。
+FixNamespaceComments: false
+
+# 'BreakBeforeBraces'选项指定函数、控制语句等的大括号样式。
+BreakBeforeBraces: Allman
+
+###################################
+#          其他样式
+###################################
+
+# 'AllowShortIfStatementsOnASingleLine'选项指定是否允许将短if语句放在一行上。
+AllowShortIfStatementsOnASingleLine: true
+
+# 'AllowShortLoopsOnASingleLine'选项指定是否允许将短循环放在一行上。
+AllowShortLoopsOnASingleLine: true
+
+# 'AllowShortBlocksOnASingleLine'选项指定是否允许将短块放在一行上。
+AllowShortBlocksOnASingleLine: true
+
+# 'IndentCaseLabels'选项指定是否缩进case标签。
+IndentCaseLabels: true
+
+# 'SortIncludes'选项指定是否对包含语句进行排序。
+SortIncludes: false
+
+# 'AlignConsecutiveMacros'选项指定如何对齐连续的宏。
+AlignConsecutiveMacros: AcrossEmptyLines
+
+# 'AlignConsecutiveAssignments'选项指定如何对齐连续的赋值语句。
+AlignConsecutiveAssignments: Consecutive
+
+# 'BreakBeforeBinaryOperators'选项指定是否在二元运算符之前换行。
+BreakBeforeBinaryOperators: All
+
+# 'BreakBeforeTernaryOperators'选项指定是否在三元运算符之前换行。
+BreakBeforeTernaryOperators: true
+
+# 'BreakBeforeInheritanceComma'选项指定是否在继承逗号之前换行。
+BreakBeforeInheritanceComma: true
